@@ -1,0 +1,193 @@
+/* Reset básico para elementos comunes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, button, input {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    color: #ed1c24;
+    font-size: 1.2rem;
+}
+.navbar-brand img {
+    height: 60px; /* Ajusta esto para cambiar el tamaño del logotipo */
+    width: auto; /* Mantiene la proporción del logotipo */
+    /* Agregar cualquier otro estilo que necesites para alinear tu logotipo correctamente */
+}
+
+
+.navbar-nav {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.nav-item {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0 1rem;
+}
+
+.nav-link {
+    color: #555;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Estilos del encabezado principal */
+.header {
+    background-color: #f2f2f2;
+    padding: 2rem;
+    text-align: center;
+}
+
+.header h1 {
+    color: #333;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.header p {
+    color: #555;
+    font-size: 1.25rem;
+}
+
+/* Botón de acción principal */
+.btn-primary {
+    background-color: #ed1c24;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 40px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #f44336;
+}
+
+/* Área de arrastre de archivos */
+.file-drop-area {
+    border: 2px dashed #ccc;
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 2rem;
+    position: relative;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.file-drop-area:hover {
+    background-color: #fafafa;
+}
+
+.file-input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Texto para 'arrastrar y soltar' */
+.drag-drop-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Estilos de la sección de anuncios */
+.ad-section {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.ad-section p {
+    color: #888;
+    font-size: 0.875rem;
+}
+
+/* Estilos del footer */
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f2f2f2; /* O el color que desees */
+    color: #888;
+    text-align: left;
+    font-size: 0.875rem;
+}
+
+/* Asegúrate de que el contenedor del footer no tenga un margen o padding excesivo */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Ajustes para el texto del footer para móviles */
+@media (max-width: 768px) {
+    .footer {
+        text-align: center;
+    }
+}
+
+
+/* Estilos responsivos para tablets y móviles */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        padding: 8px 35px;
+        font-size: 0.9rem;
+    }
+
+    .file-drop-area {
+        padding: 25px;
+    }
+
+    .nav-item {
+        padding: 0 0.5rem;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+}
+
+/* Resto de estilos personalizados y ajustes detallados aquí */
+.featurette-heading {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.list-unstyled li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.list-unstyled i {
+    color: #ed1c24; /* Color rojo para los iconos */
+    margin-right: 0.5rem;
+}
